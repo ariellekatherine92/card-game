@@ -2,6 +2,9 @@
 
 For my hackathon project I constructed the game of War using HTML, CSS, and Javascript.
 
+Click [here](https://war-card-game-sepia.vercel.app/) to play the game!
+Click here => github.com/ariellekatherine92/card-game to get to my Github Repo!
+
 The game rules are simple:
 The goal is to be the first player to win all 52 cards.
 
