@@ -4,34 +4,64 @@
   
   body {
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: 7rem 2rem 7rem;
-    gap: .5rem;
-    cursor: pointer;
-    justify-content: center;
+    background-image: url('./felt.png');
+    position: relative;
+    height: 100vh;
+  }
+
+  .background {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(rgba(79, 121, 66, 0.5), rgba(53, 94, 59, 0.9));
+    mix-blend-mode: darken;
+  }
+
+  .container {
     padding-top: 1rem;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 182px 2rem 182px;
+    gap: .5rem;
   }
   
   .deck {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    border-radius: .5rem;
+    border-radius: 10px;
     color: white;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+        #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, sans-serif;
     user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
   }
   
   .computer-deck {
     background-color: palevioletred;
+    background-image: url('./cards.jpeg');
   }
   
   .player-deck {
     background-color: black;
+    background-image: url('./cards.jpeg');
+    background-position: right;
   }
   
   .text {
@@ -39,18 +69,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 4px #333;
+    font-size: 22px;
   }
   
   .card {
     position: relative;
     height: 100%;
     width: 100%;
-    border: 1px solid black;
     border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   
   .card.red {
